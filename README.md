@@ -2,6 +2,8 @@
 
 A simple example project to explore and demonstrate how to use **TypeScript mixins** with NestJS (at least for for entities).
 
+> Inspired by AdonisJS `compose` helper : https://docs.adonisjs.com/guides/references/helpers#compose
+
 ## What is this?
 
 This project shows a practical implementation of mixins in NestJS
