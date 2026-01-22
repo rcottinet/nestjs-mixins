@@ -23,10 +23,11 @@ class User extends Common {}
 ❌ not flexible, all or nothing
 
 // OR instead of a chain like:
-class Temp1 extends BaseEntity {}
-class Temp2 extends WithCreatedAt(Temp1) {}
-class Temp3 extends WithUpdatedAt(Temp2) {}
-class User extends WithDeletedAt(Temp3) {}
+class User extends WithDeletedAt(
+  WithUpdatedAt(
+    WithCreatedAt(BaseEntity)
+  )
+) {}
 
 ❌ verbose and hard to read
 
